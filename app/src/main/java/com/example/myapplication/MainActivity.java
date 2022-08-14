@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button socketConnectBtn = findViewById(R.id.socketConnectBtn);
+        //Button socketConnectBtn = findViewById(R.id.socketConnectBtn);
 
         /*
         버튼을 클릭했을 때
@@ -39,13 +39,13 @@ public class MainActivity extends AppCompatActivity {
         2. 소켓통신을 위한 스레드의 매개변수로 넣어주어 스레드 객체 생성
         3. 스레드 시작
         */
-        socketConnectBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                SocketThread thread = new SocketThread();
-                thread.start();
-            }
-        });
+//        socketConnectBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                SocketThread thread = new SocketThread();
+//                thread.start();
+//            }
+//        });
     }
 
     class SocketThread extends Thread{
